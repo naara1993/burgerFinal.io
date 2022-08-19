@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="IMG/icon.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <title>Dev Burger</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header id="header" class="fixed-top container-fluid">
+      <div class="contenedor-logo-boton">
+        <div class="d-flex">
+          <img id="logo" src="./IMG/logo.png" alt="" />
+          <h1 class="titulo">DevBurger</h1>
+        </div>
+        <button id="btn-hamburg" type="button" data-open>
+          <span class="fas fa-bars"></span>
+        </button>
+      </div>
+      <nav>
+        <div class="nav-header" id="nav-header">
+          <div class="headerdelheader">
+            <button id="button-cerrar" type="button" data-close>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="links-header">
+            <ul class="ul">
+              <li class="li"><a href="#menu">Menú</a></li>
+              <hr />
+              <li class="li"><a href="#promociones">Promociones</a></li>
+              <hr />
+              <li class="li"><a href="#sucursales">Sucursales</a></li>
+              <hr />
+              <li class="li"><a href="#nosotras">Nosotras</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Seccion carrousel-->
+    <section id="seccion">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators mt-5">
+          <button
+            id="button-flecha"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            id="button-flecha"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            id="button-flecha"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./IMG/burgerbur.png"
+              class="img-carrousel img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./IMG/cajitapix.png"
+              class="img-carrousel img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+             
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./IMG/cartelito.jpg"
+              class="img-carrousel img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--svg-->
+    <section>
+      <svg
+        class="svg"
+        class="features__geometry-orange"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#e6c233"
+          fill-opacity="1"
+          d="M0,192L48,197.3C96,203,192,213,288,186.7C384,160,480,96,576,112C672,128,768,224,864,240C960,256,1056,192,1152,154.7C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+    </section>
+
+
+    <!--Cabecera de la seccion de hamburguesas-->
+    <div id="promociones" class="nuestras_hamburguesas">
+      <div>
+        <h1 class="prueba_hamburguesas">
+          P r o b a n u e s t r a s <br />hamburguesas
+        </h1>
+      </div>
+      <!--Fotos seccion de hamburguesas-->
+      <div class="burger_3">
+        <div class="triple_burguer">
+          <img
+            class="burger"
+            class="abrir-modal"
+            data-open="modal-presentacion"
+            src="./IMG/pan.png"
+            alt=""
+          />
+          <span class="burger_descripcion"> Triple HTML</span>
+        </div>
+        <div class="triple_burguer">
+          <img
+            class="burger"
+            class="abrir-modal"
+            data-open="modal-presentacion"
+            src="./IMG/pan1.png"
+            alt=""
+          />
+          <span class="burger_descripcion"> PixBurg</span>
+        </div>
+        <div class="triple_burguer">
+          <img
+            class="burger"
+            class="abrir-modal"
+            data-open="modal-presentacion"
+            src="./IMG/pan.png"
+            alt=""
+          />
+          <span class="burger_descripcion">Big Java</span>
+        </div>
+      </div>
+    </div>
+    <div id="modal-presentacion" class="modal">
+      <div class="modal-contenido">
+        <header>
+          <button class="cerrar-modal" data-close="">X</button>
+        </header>
+        <img src="./IMG/infonutri.PNG" alt="" width="400" height="400" />
+      </div>
+    </div>
+
+    <div class="separadorDeSeccion"></div>
+    <!------ Sucursales ------->
+    <div id="sucursales" class="titulo-suc">
+      <h2>Nuestras sucursales</h2>
+    </div>
+    <section class="sec-sucursales">
+      <div class="sucursales-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26750.887219938806!2d-58.46043804493299!3d-34.598607612368745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1660272451025!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="sucursales-descrip">
+        <div class="contenedor-imagen-suc">
+          <img src="IMG/icono mapa.svg" alt="" />
+        </div>
+
+        <div class="contenedor-texto-suc">
+          <h4>Villa Crespo</h4>
+
+          <span>Avenida Ramos Mejía 654</span>
+          <span>+54 9 11 555478</span>
+        </div>
+
+        <div class="contenedor-imagen-suc">
+          <img src="IMG/icono mapa.svg" alt="" />
+        </div>
+
+        <div class="contenedor-texto-suc">
+          <h4>Colegiales</h4>
+
+          <span>Avenida Ramos Mejía 654</span>
+          <span>+54 9 11 555477</span>
+        </div>
+      </div>
+    </section>
+
+    <!------ Nosotras ------->
+
+    <div id="nosotras" style=" margin-top: 5%;" class="separadorDeSeccion"></div>
+
+    <section id="seccion-nosotras" class="seccion-nosotras">
+      <div class="titulo-nosotras">
+        <h2>Nosotras</h2>
+      </div>
+
+      <div class="sec-nosotras2">
+        <div class="contenedor-img-noso">
+          <img src="img/img-burger.jpg" alt="" />
+        </div>
+
+        <div class="descrip-nosotras">
+          <span
+            >Les damos la bienvenida, somos un grupo de programadoras,
+            inspiradas en combinar la tecnología con la cocina. Este
+            emprendimiento nació en un proyecto de Connect.Ada</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!------ MENUUUU ------->
+
+    <div id="menu" class="separadorDeSeccion"></div>
+
+    <section id="seccion-menu" class="seccion-menu menu">
+      <div class="titulo-menu">
+        <h2>Escanea nuestro menu</h2>
+      </div>
+
+      <div class="sec-menu2">
+        <div class="contenedor-img-menu">
+          <img src="img/scan.png" />
+        </div>
+      </div>
+    </section>
+
+    <!--svg2-->
+    <section>
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%;   background-color: black;"
+      >
+        <path
+          d="M0.00,49.98 C470.37,214.63 159.42,-79.44 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #e6c233; "
+        ></path>
+      </svg>
+    </section>
+    <!--footer-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div>
+            <ul class="list-unstyled contenedor-enlances d-inline-flex">
+              <li>
+                <a href="#" class="text-dark">Menú</a>
+              </li>
+              <li class="li">
+                <a href="#" class="text-dark">Sucursales</a>
+              </li>
+              <li class="li">
+                <a href="#" class="text-dark">Cupones</a>
+              </li>
+              <li class="li">
+                <a href="#" class="text-dark">Promociones</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <p>Suscribase y recibí todas las novedades</p>
+        </div>
+        <div class="row mt-3">
+          <div class="contenedor-redes-sociales d-flex">
+            <h5 class="text-uppercase mb-3">Seguinos</h5>
+            <ul class="list-unstyled d-inline-flex ms-3">
+              <li class="pe-4">
+                <a href="#!" class="text-dark">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="pe-4">
+                <a href="#!" class="text-dark">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="pe-4">
+                <a href="#!" class="text-dark">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="JS/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d4827d7cda.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
